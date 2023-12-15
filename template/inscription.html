@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+    <div class="contactez-nous">
+        <h1>Inscription au Forum</h1>
+        <form action="/main.go" method="post">
+            <div class="pseudo">
+                <label for="pseudo">Votre pseudo</label>
+                <input type="text" id="pseudo" name="pseudo" placeholder="bouba" required>
+            </div>
+            <div class="email">
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div class="naissance">
+                <label for="datenaissance">Votre date de naissance</label>
+                <input type="date" id="datenaissance" name="datenaissance" required>
+            </div>
+            <div class="photo">
+                <label for="photo">Votre date de naissance</label>
+                <input type="file" id="photo" name="photo" required>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="........" required>
+            </div>
+            <div>
+                <label for="password2">Saisir à nouveau le mot de passe</label>
+                <input type="password" id="password2" name="confirmpassword" placeholder="........" required>
+            </div>
+            <div>
+                <p style="margin-right: 20px">
+                    <input type="checkbox" id="accepte" name="accepte_termes" required>
+                    J'accepte les <a>Conditions Générales d'Utilisation</a> et reconnais avoir été informé 
+                    que mes données personnelles seront utilisées tel que décrit ci-dessous et 
+                    détaillé dans la Politique de protection des données personnelles</p>
+            </div>
+            <div>
+            <button type="submit">S'inscrire</button>
+            </div>
+        </form>
+        <!--<a href="index.html">Retour sur la page d'accueil</a>-->
+    </div>
+</body>
+</html>
